@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "http_world_stats",
+  "version": "${version}",
+  "name": "http_world_stats",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/http_world_stats/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "dev.matheuspass.http_world_stats.client.Http_world_statsDataGenerator"
+    ],
+    "client": [
+      "dev.matheuspass.http_world_stats.client.Http_world_statsClient"
+    ],
+    "main": [
+      "dev.matheuspass.http_world_stats.Http_world_stats"
+    ]
+  },
+  "mixins": [
+    "http_world_stats.mixins.json",
+    {
+      "config": "http_world_stats.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
