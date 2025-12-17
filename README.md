@@ -56,6 +56,56 @@ The mod starts an embedded HTTP server when the Minecraft server starts. The ser
     - `dimension` - Dimension identifier
     - `loadedChunksCount` - Number of loaded chunks in that dimension
 
+#### Example Response
+
+```json
+{
+  "hardcore": false,
+  "difficulty": "normal",
+  "motd": "A Minecraft Server",
+  "tickTimeMsAvg": 12.5,
+  "playerCount": 2,
+  "maxPlayers": 20,
+  "worldName": "My World",
+  "dayTime": 6000,
+  "time": 24000,
+  "seed": 1234567890,
+  "dayCount": 1,
+  "dayNumberHuman": 2,
+  "dimension": "minecraft:overworld",
+  "players": [
+    {
+      "name": "Steve",
+      "uuid": "8667b71b-86b0-4bfa-9693-32707ddcc527",
+      "x": 100.5,
+      "y": 64.0,
+      "z": 200.3
+    },
+    {
+      "name": "Alex",
+      "uuid": "61699b2e-d327-4a01-9f1e-296a35585225",
+      "x": -50.2,
+      "y": 70.0,
+      "z": 150.8
+    }
+  ],
+  "dimensions": [
+    {
+      "dimension": "minecraft:overworld",
+      "loadedChunksCount": 441
+    },
+    {
+      "dimension": "minecraft:the_nether",
+      "loadedChunksCount": 196
+    },
+    {
+      "dimension": "minecraft:the_end",
+      "loadedChunksCount": 25
+    }
+  ]
+}
+```
+
 ### Example Usage
 
 Once the mod is loaded and a world is running, you can access:
