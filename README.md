@@ -2,6 +2,8 @@
 
 A Minecraft Fabric mod that exposes world statistics via a local HTTP server.
 
+**GitHub Repository:** [https://github.com/euMts/minecraft-http-world-stats-fabric](https://github.com/euMts/minecraft-http-world-stats-fabric)
+
 ## Requirements
 
 This mod requires:

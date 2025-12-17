@@ -3,9 +3,12 @@
   "id": "http_world_stats",
   "version": "${version}",
   "name": "http_world_stats",
-  "description": "",
+  "description": "A Minecraft Fabric mod that exposes world statistics via a local HTTP server.",
   "authors": [],
-  "contact": {},
+  "contact": {
+    "homepage": "https://github.com/euMts/minecraft-http-world-stats-fabric",
+    "sources": "https://github.com/euMts/minecraft-http-world-stats-fabric"
+  },
   "license": "All-Rights-Reserved",
   "icon": "assets/http_world_stats/icon.png",
   "environment": "*",
